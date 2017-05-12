@@ -1,6 +1,24 @@
 <html>
 <html lang="en-US">
 	<head>
+    <style>
+    body {
+    	  background-color:blanchedalmond;
+    }
+    h1   {
+    	  color: blue; 
+          font-family:calibri; 
+          text-align:center; 
+          font-size:60px
+    }
+    img  { 
+    width:100%; 
+	}
+    table {
+    	   font-family:calibri;
+           border-collapse: collapse;
+           width: 100%;
+    }
 		<script src="js/mail-generator.js"></script>
 		<link href="css/style.css" rel="stylesheet" media="screen">
     <script>
@@ -9,12 +27,19 @@
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
         
       };
+    </style>
     </script>
 	</head>
-	<body style="backgroung-color:ffe6f2;">
+	<body>
 		<div class="container" id="main">
 			<header>
-				<h1 style="color:blue; font-family:verdana; text-align:center;">GeeMail</h1>
+				<h1><p title="Welcome to GeeMail">GeeMail<img src="https://media.giphy.com/media/A99U7yPvXJToI/giphy.gif" alt="geemail" style="float:center;width:100px;height:100px;"></p></h1>
+                <hr>
+                <table>
+                    <tr>
+                    	<th>Date</th>
+                        <th>Subject</th>
+                        <th>Sender</th>
 			</header>
 		</div>
 	</body>
