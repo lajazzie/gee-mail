@@ -1,5 +1,53 @@
 <html>
+<html lang="en-US">
 	<head>
+    <style>
+    body {
+    	  background-color:blanchedalmond;
+    }
+    h1   {
+    	  color: blue; 
+          font-family:calibri; 
+          text-align:center; 
+          font-size:60px
+    }
+    img  { 
+    width:100%; 
+	}
+    table {
+    	   font-family:calibri;
+           border-collapse: collapse;
+           width: 100%;
+           color: blue;
+    }
+    div.container {
+    		width:100%;
+            border: 1px solid gray
+    }
+    header {
+    		padding: 1em;
+            text-align:center;
+            clear: left;
+    }
+    footer {
+    		padding: 1em;
+            text-align:center; 
+            clear:left;
+            color: blue;
+            font-family: calibri;
+    }
+    nav {
+    		float: left;
+            max-width: 200px;
+            margin: 0;
+            padding: 1em;
+     }
+    article {
+    		margin-left: 170px;
+   			border-left: 1px solid gray;
+    		padding: 1em;
+    		overflow: hidden;
+}
 		<script src="js/mail-generator.js"></script>
 		<link href="css/style.css" rel="stylesheet" media="screen">
     <script>
@@ -9,10 +57,28 @@
         
       };
     </script>
+    </style>
 	</head>
 	<body>
-		<div class="container" id="main">
-			Build Me!
-		</div>
+			<header>
+				<h1><p title="Welcome to GeeMail">GeeMail<img src="https://media.giphy.com/media/A99U7yPvXJToI/giphy.gif" alt="geemail" style="float:center;width:100px;height:100px;"></p></h1>
+<hr>
+</header>
+<table>
+                    <tr>
+                    	<th>Inbox</th>
+                        <th>Message</th>
+                        </tr>
+                        </table>
+                <br> 
+<nav>
+ <div class="container" id="main">
+ <iframe src="demo_iframe.htm" width="200" style="border:none;"></iframe>
+                </div>
+                </nav>
+<article>
+<p>This is a test!</p>
+</article>
+<footer>GeeMail.com</footer>
 	</body>
 </html>
