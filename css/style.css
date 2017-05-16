@@ -1,26 +1,25 @@
  body {
     	 background-color:blanchedalmond;
     }
-    h1   {
+h1   {
     	  color: blue; 
           font-family:calibri; 
           text-align:center; 
           font-size:60px
     }
-    img  {
+img  {
 	   width:100%; 
 	}
-
-    div.container {
+.container {
 	    width:100%;
 	    border: 1px solid gray;
     }
-    header {
+header {
 	    padding: 1em;
             text-align:center;
             clear: left;
     }
-    footer {
+footer {
 	    padding: 1em;
             text-align:center; 
             clear:left;
