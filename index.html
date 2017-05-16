@@ -8,11 +8,11 @@
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
        
-	      var displayCount = document.getElementById("clicker");
+	      var displayCount = document.getElementById("counter");
 	      displayCount.innerHTML = "Inbox: " + geemail.length++;
 	      
-	      function clicker (){
-		      var countDisplay = document.getElementByID("clicker")
+	      function counter (){
+		      var countDisplay = document.getElementByID("counter")
 		      countDisplay.innerHTML = "Inbox: " + geemail.length++;
 	      }
 	      
@@ -21,6 +21,7 @@
 	      
        
       };
+	    $(document).ready(main);
     </script>
 	</head>
 	<body>
