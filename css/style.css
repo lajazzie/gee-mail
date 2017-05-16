@@ -1,0 +1,29 @@
+ body {
+    	 background-color:blanchedalmond;
+    }
+    h1   {
+    	  color: blue; 
+          font-family:calibri; 
+          text-align:center; 
+          font-size:60px
+    }
+    img  { 
+    width:100%; 
+	}
+
+    div.container {
+    		width:100%;
+        border: 1px solid gray
+    }
+    header {
+    		padding: 1em;
+            text-align:center;
+            clear: left;
+    }
+    footer {
+    		padding: 1em;
+            text-align:center; 
+            clear:left;
+            color: blue;
+            font-family: calibri;
+    }
