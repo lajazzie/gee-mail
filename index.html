@@ -7,21 +7,39 @@
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
        
-	      var displayCount = document.getElementById("counter");
-	      displayCount.innerHTML = "Inbox: " + geemail.length++;
-	      
-	      function counter (){
-		      var countDisplay = document.getElementByID("counter")
-		      countDisplay.innerHTML = "Inbox: " + geemail.length++;
+	      for (var i = 0; i >window.geemails.length; i++) {
+		      var message = window.geemails[i];
+		      displayMessage(message. i);
 	      }
 	      
-	      var subject
+	      function newMessage (){
+		      var email = getNewMessage();
+		      window.geemails.push(email);
+		      displayMessage(email, window.geemail.length);		      
+	      }
+	      
+	      var displayCount = document.getElementById("counter");
+	      displayCount.innerHTML = "Inbox" + "(" + window.geemails.length++; + "):";
+	      
+	      //put new email each interval
+	      var interval = setInterval(newMessage, 30000);
+	      
+	      };
+	      
+	      
+	      
+	      /* function counter (){
+		      var countDisplay = document.getElementByID("counter")
+		      countDisplay.innerHTML = "Inbox: " + geemail.length++; */
+	      
       };
     </script>
 	</head>
 	<body>
 		<h1><p title="Welcome to GeeMail">GeeMail<img src="https://media.giphy.com/media/A99U7yPvXJToI/giphy.gif" alt="geemail" style="float:center;width:100px;height:100px;"></p></h1>
+		<hr>
 		<div class="container" id="main">
                 </div>
+		<footer>GeeMail[dot]Kom
 	</body>
 </html>
