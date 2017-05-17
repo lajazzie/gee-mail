@@ -6,11 +6,34 @@
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-       
-	      for (var i = 0; i >window.geemails.length; i++) {
-		      var message = window.geemails[i];
-		      displayMessage(message. i);
+	      
+	      for (var i = 0; i>window.geemails.length; i++) {
+		      //var message = window.geemails[i];
+		      //displayMessage(message. i);
+		      var newInbox - document.createElement("div");
+		      newInbox.className = "newInboxClass";
+		      main.appendChild(newInbox);
+		      
+		      var msgSender = document.createElement("div");
+		      msgSender.innerHTML = window.geemails[i].sender;
+		      newInbox.appendchild(msgSender);
+		      
+		      var msgSubject = document.createElement("div");
+		      msgSender.innerHTML = window.geemails[i].subject;
+		      newInbox.appendchild(msgSubject);
+		      
+		      var msgDate = document.createElement("div");
+		      msgSender.innerHTML = window.geemails[i].date;
+		      newInbox.appendchild(msgDate);
+		      
+		      var msgBody = document.createElement("div");
+		      msgSender.innerHTML = window.geemails[i].body;
+		      newInbox.appendchild(msgBody);
 	      }
+	      
+	      
+	      //var displayCount = document.getElementById("counter");
+	      //displayCount.innerHTML = "Inbox" + "(" + window.geemails.length++; + "):";
 	      
 	      function newMessage (){
 		      var email = getNewMessage();
@@ -18,8 +41,6 @@
 		      displayMessage(email, window.geemail.length);		      
 	      }
 	      
-	      var displayCount = document.getElementById("counter");
-	      displayCount.innerHTML = "Inbox" + "(" + window.geemails.length++; + "):";
 	      
 	      //put new email each interval
 	      var interval = setInterval(newMessage, 30000);
@@ -38,8 +59,24 @@
 	<body>
 		<h1><p title="Welcome to GeeMail">GeeMail<img src="https://media.giphy.com/media/A99U7yPvXJToI/giphy.gif" alt="geemail" style="float:center;width:100px;height:100px;"></p></h1>
 		<hr>
+		<nav>
+			<ul>
+				<li><a href="#">Inbox</a></li>
+				<li><a href="#">Sent</a></li>
+				<li><a href="#">Spam</a></li>
+				<li><a href="#">Trash</a></li>
+			</ul>
+		</nav>
+		
+		<section>
+		</section>
+		
+		<article>
+		</article>
+		
 		<div class="container" id="main">
                 </div>
+		
 		<footer>GeeMail[dot]Kom
 	</body>
 </html>
