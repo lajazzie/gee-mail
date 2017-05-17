@@ -1,28 +1,36 @@
  body {
-    	 background-color:blanchedalmond;
+	background-color:blanchedalmond;
     }
+
 h1   {
-    	  color: blue; 
-          font-family:calibri; 
-          text-align:center; 
-          font-size:60px
+	color: blue; 
+	font-family:calibri; 
+        text-align:center; 
+        font-size:60px
     }
+
 img  {
-	   width:100%; 
+	width:100%; 
 	}
-.container {
-	    width:100%;
-	    border: 1px solid gray;
-    }
-header {
-	    padding: 1em;
-            text-align:center;
-            clear: left;
-    }
+
+nav {
+	float: left;
+	max-width: 160px;
+	margin: 0;
+	padding: 1em;
+	}
+
+article {
+	margin-left: 170px;
+    	border-left: 1px solid blue;
+    	padding: 1em;
+    	overflow: hidden;
+	}
+
 footer {
-	    padding: 1em;
-            text-align:center; 
-            clear:left;
-            color: blue;
-            font-family: calibri;
-    }
+	padding: 1em;
+	text-align:center; 
+	clear:left;
+	color: blue;
+	font-family: calibri;
+}
