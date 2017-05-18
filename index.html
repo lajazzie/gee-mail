@@ -12,23 +12,23 @@
 		      var msgSender = document.createElement("div");
 		      msgSender.className = "sender";
 		      msgSender.innerHTML = window.geemails[i].sender;
-		      newInbox.appendchild(msgSender);
+		      main.appendChild(msgSender);
 		      
 		      var msgSubject = document.createElement("div");
 		      msgSubject.className = "subject";
 		      msgSender.innerHTML = window.geemails[i].subject;
-		      newInbox.appendchild(msgSubject);
+		      msgSubject.appendChild(msgSubject);
 		      
 		      var msgDate = document.createElement("div");
 		      msgDate.className = "date";
 		      msgDate.innerHTML = window.geemails[i].date;
-		      newInbox.appendchild(msgDate);
+		      msgSubject.appendChild(msgDate);
 		      
 		      var msgBody = document.createElement("div");
 		      msgBody.className = "body";
 		      msgBody.innerHTML = window.geemails[i].body;
 		      msgBody.style.display = "none",		      
-		      newInbox.appendchild(msgBody);
+		      msgSubject.appendChild(msgBody);
 	      }
 	      //  toggle message body
       }
