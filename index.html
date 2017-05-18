@@ -7,10 +7,10 @@
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
 	      
-	      for (var i = 0; i>window.geemails.length; i++) {
+	      for (var i = 0; i<window.geemails.length; i++) {
 		      //var message = window.geemails[i];
 		      //displayMessage(message. i);
-		      var newInbox - document.createElement("div");
+		      var newInbox = document.createElement("div");
 		      newInbox.className = "newInboxClass";
 		      main.appendChild(newInbox);
 		      
@@ -23,18 +23,15 @@
 		      newInbox.appendchild(msgSubject);
 		      
 		      var msgDate = document.createElement("div");
-		      msgSender.innerHTML = window.geemails[i].date;
+		      msgDate.innerHTML = window.geemails[i].date;
 		      newInbox.appendchild(msgDate);
 		      
 		      var msgBody = document.createElement("div");
-		      msgSender.innerHTML = window.geemails[i].body;
+		      msgBody.innerHTML = window.geemails[i].body;
+		      msgBody.style.display = "none",		      
 		      newInbox.appendchild(msgBody);
 	      }
-	      
-	      
-	      //var displayCount = document.getElementById("counter");
-	      //displayCount.innerHTML = "Inbox" + "(" + window.geemails.length++; + "):";
-	      
+
 	      function newMessage (){
 		      var email = getNewMessage();
 		      window.geemails.push(email);
