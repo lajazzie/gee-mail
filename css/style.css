@@ -15,7 +15,7 @@ img  {
 
 .newInboxClass {
 	padding: 8px;
-	border-bottom: 2px solid blue;
+	border-bottom: 1px dotted blue;
 	}
 
 .sender {
