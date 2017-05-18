@@ -9,26 +9,30 @@
 	      
 	      for (var i = 0; i < window.geemails.length; i++) {
 		      
+		      var msgBox = document.createElement("div")
+		      msgBox.className = "newBoxClass";
+		      main.appendChild(msgBox);
+		      
 		      var msgSender = document.createElement("div");
 		      msgSender.className = "sender";
 		      msgSender.innerHTML = window.geemails[i].sender;
-		      main.appendChild(msgSender);
+		      msgBox.appendChild(msgSender);
 		      
 		      var msgSubject = document.createElement("div");
 		      msgSubject.className = "subject";
 		      msgSender.innerHTML = window.geemails[i].subject;
-		      msgSubject.appendChild(msgSubject);
+		      msgBox.appendChild(msgSubject);
 		      
 		      var msgDate = document.createElement("div");
 		      msgDate.className = "date";
 		      msgDate.innerHTML = window.geemails[i].date;
-		      msgSubject.appendChild(msgDate);
+		      msgBox.appendChild(msgDate);
 		      
 		      var msgBody = document.createElement("div");
 		      msgBody.className = "body";
 		      msgBody.innerHTML = window.geemails[i].body;
 		      msgBody.style.display = "none",		      
-		      msgSubject.appendChild(msgBody);
+		      msgBox.appendChild(msgBody);
 	      }
 	      //  toggle message body
       }
