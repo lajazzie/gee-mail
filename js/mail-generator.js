@@ -47,5 +47,3 @@
   window.getNewMessage = getNewMessage;
   loadGeeMails();	
 })();
-
-$(document).ready(main);
