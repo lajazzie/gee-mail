@@ -40,25 +40,29 @@
 	      function getNewEmail(){
 		      var email = getNewMessage();
 		      
+		      var msgBox = document.createElement("div")
+		      msgBox.className = "newBoxClass";
+		      main.appendChild(msgBox);
+		      
 		      var emailSender = document.createElement("div");
-		      emailDate.className = "sender";
-		      emailDate.innerHTML = email.sender;
-		      main.appendChild(emailDate);
+		      emailSender.className = "sender";
+		      emailSender.innerHTML = email.sender;
+		      msgBox.appendChild(emailSender);
 		      
 		      var emailSub = document.createElement("div");
 		      emailSub.className = "subject";
 		      emailSub.innerHTML = email.subject;
-		      emailDate.appendChild(emailSub);
+		      msgBox.appendChild(emailSub);
 		      
 		      var emailDate = document.createElement("div");
-		      emailSub.className = "date";
-		      emailSub.innerHTML = email.date;
-		      emailDate.appendChild(emailDate);
+		      emailDate.className = "date";
+		      emailDate.innerHTML = email.date;
+		      msgBox.appendChild(emailDate);
 		      
 		      var emailBody = document.createElement("div");
-		      emailSub.className = "body";
-		      emailSub.innerHTML = email.body;
-		      emailDate.appendChild(emailBody);
+		      emailBody.className = "body";
+		      emailBody.innerHTML = email.body;
+		      msgBox.appendChild(emailBody);
 	      }
       };
     </script>
