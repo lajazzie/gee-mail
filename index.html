@@ -7,6 +7,7 @@
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
 	      var inboxCount = 0;
+	      
 	      for (var i = 0; i<window.geemails.length; i++) {
 		      inboxCount+=1;
 		      //var message = window.geemails[i];
@@ -43,6 +44,8 @@
 		      window.geemails.push(email);
 		      displayMessage(email, window.geemail.length);		      
 	      }
+	      
+	      newMessage(window.geemails);
 	      
 	      
 	      //put new email each interval
