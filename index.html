@@ -7,7 +7,7 @@
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
 	      
-	      for (var i = 0; i<window.geemails.length; i++) {
+	      for (var i = 0; i < window.geemails.length; i++) {
 		      //var message = window.geemails[i];
 		      //displayMessage(message. i);
 		      
@@ -36,14 +36,25 @@
 		      msgBody.style.display = "none",		      
 		      newInbox.appendchild(msgBody);
 	      }
+	      //  toggle message body
+	      // var showMessage = 
 
-	      function newMessage (){
+	      function getNewEmail(){
 		      var email = getNewMessage();
 		      window.geemails.push(email);
-		      displayMessage(email, window.geemail.length);		      
+		      
+		      var emailDate = document.createElement("div");
+		      emailDate.className = "date";
+		      emailDate.innerHTML = email.date;
+		      main.appendChild(emailDate);
+		      
+		      var emailSub = document.createElement("div");
+		      emailSub.className = "subject";
+		      emailSub.innerHTML = email.subject;
+		      emailDate.appendChild(emailSub);
 	      }
 	      
-	      newMessage(window.geemails);
+	      // newMessage(window.geemails);
 	      
 	      
 	      //put new email each interval
