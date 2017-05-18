@@ -13,6 +13,11 @@ img  {
 	width:100%; 
 	}
 
+.newInboxClass {
+	padding: 8px;
+	border-bottom: 2px solid blue;
+	}
+
 nav {
 	float: left;
 	max-width: 160px;
