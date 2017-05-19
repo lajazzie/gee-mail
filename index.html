@@ -6,8 +6,78 @@
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser  
-console.log(window.geemails);
+	      function emailSub() {
+	      for (var i = 0; i < window.geemails.length; i++) {
+		      mailCount+=1;
+		      
+		      var msgBox = document.createElement("div")
+		      msgBox.className = "newBoxClass";
+		      main.appendChild(msgBox);
+		      console.log(msgBox);
+		      
+		      var msgSender = document.createElement("div");
+		      msgSender.className = "sender";
+		      msgSender.innerHTML = window.geemails[i].sender;
+		      msgBox.appendChild(msgSender);
+		      console.log(msgSender);
+		      
+		      var msgSubject = document.createElement("div");
+		      msgSubject.className = "subject";
+		      msgSender.innerHTML = window.geemails[i].subject;
+		      msgBox.appendChild(msgSubject);
+		      console.log(msgSubject);
+		      
+		      var msgDate = document.createElement("div");
+		      msgDate.className = "date";
+		      msgDate.innerHTML = window.geemails[i].date;
+		      msgBox.appendChild(msgDate);
+		      console.log(msgDate);
+		      
+		      var msgBody = document.createElement("div");
+		      msgBody.className = "body";
+		      msgBody.innerHTML = window.geemails[i].body;
+		      msgBody.style.display = "none",		      
+		      msgBox.appendChild(msgBody);
+		      console.log(body);
+	      }
+	      }
+	      emailSub();
+	      //  toggle message body
+	      
+      }
+
+	      function getNewEmail(){
+		      mailCount++;
+		      
+		      var email = getNewMessage();
+		      console.log(email);
+		      
+		      var msgBox = document.createElement("div")
+		      msgBox.className = "newBoxClass";
+		      main.appendChild(msgBox);
+		      
+		      var emailSender = document.createElement("div");
+		      emailSender.className = "sender";
+		      emailSender.innerHTML = email.sender;
+		      msgBox.appendChild(emailSender);
+		      
+		      var emailSub = document.createElement("div");
+		      emailSub.className = "subject";
+		      emailSub.innerHTML = email.subject;
+		      msgBox.appendChild(emailSub);
+		      
+		      var emailDate = document.createElement("div");
+		      emailDate.className = "date";
+		      emailDate.innerHTML = email.date;
+		      msgBox.appendChild(emailDate);
+		      
+		      var emailBody = document.createElement("div");
+		      emailBody.className = "body";
+		      emailBody.innerHTML = email.body;
+		      msgBox.appendChild(emailBody);
+	      }
 	    
+	    setInterval(newMessage, 3000);	    
       };
     </script>
 	</head>
