@@ -5,8 +5,8 @@
     <script>
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
-        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-	   function loadPage (){   
+        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser  
+	      
 	      for (var i = 0; i < window.geemails.length; i++) {
 		      
 		      var msgBox = document.createElement("div")
@@ -40,6 +40,7 @@
 
 	      function getNewEmail(){
 		      var email = getNewMessage();
+		      console.log(email);
 		      
 		      var msgBox = document.createElement("div")
 		      msgBox.className = "newBoxClass";
