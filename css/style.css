@@ -42,19 +42,6 @@ img  {
 	font-family:calibri;  
         font-size:30px;
 }
-nav {
-	float: left;
-	max-width: 160px;
-	margin: 0;
-	padding: 1em;
-	}
-
-article {
-	margin-left: 170px;
-    	border-left: 1px solid blue;
-    	padding: 1em;
-    	overflow: hidden;
-	}
 
 footer {
 	padding: 1em;
