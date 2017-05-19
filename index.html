@@ -6,15 +6,13 @@
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser 
+	     console.log(window.geemails);
 	      
+	      var count = 0;
 	      for (var i = 0; i < window.geemails.length; i++) {
-		      console.log(window.geemails[i].date);
-		      console.log(window.geemails[i].sender);
-		      console.log(window.geemails[i].subject);
-		      console.log(window.geemails[i].body);
-	      }
-      }
-		     /* var msgBox = document.createElement("div")
+		      count ++;
+		      
+		      var msgBox = document.createElement("div")
 		      msgBox.className = "newBoxClass";
 		      main.appendChild(msgBox);
 		      console.log(msgBox);
@@ -49,7 +47,7 @@
       }
 
 	      function getNewEmail(){
-		      mailCount++;
+		      count++;
 		      
 		      var email = getNewMessage();
 		      console.log(email);
@@ -80,7 +78,7 @@
 	      }
 	    
 	    setInterval(newMessage, 3000);	    
-      }; */
+      };
     </script>
 	</head>
 	<body>
