@@ -5,12 +5,16 @@
     <script>
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
-        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser  
-	      function emailSub() {
+        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser 
+	      
 	      for (var i = 0; i < window.geemails.length; i++) {
-		      mailCount+=1;
-		      
-		      var msgBox = document.createElement("div")
+		      console.log(window.geemails[i].date);
+		      console.log(window.geemails[i].sender);
+		      console.log(window.geemails[i].subject);
+		      console.log(window.geemails[i].body);
+	      }
+      }
+		     /* var msgBox = document.createElement("div")
 		      msgBox.className = "newBoxClass";
 		      main.appendChild(msgBox);
 		      console.log(msgBox);
@@ -40,8 +44,6 @@
 		      msgBox.appendChild(msgBody);
 		      console.log(body);
 	      }
-	      }
-	      emailSub();
 	      //  toggle message body
 	      
       }
@@ -78,7 +80,7 @@
 	      }
 	    
 	    setInterval(newMessage, 3000);	    
-      };
+      }; */
     </script>
 	</head>
 	<body>
